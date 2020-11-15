@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+<link rel="stylesheet" type="text/css" href="files/css/style.css" />
+<script src="script.js"></script>
+<title>Diode</title>
+</head>
+<body>
+	<nav class="nav" >
+		<div class="universal" >
+			<h1 class="heading">Types of Diode</h1>
+		</div>
+		<div class="local" >
+			<ul class="content">
+				<li>
+					<div class="container">
+						<div class="mover"></div>
+					</div>
+				</li>
+				<li><a href="#Schottky" onclick="Maindiv()">Schottky diodes</a></li>
+				<li><a href="#Tunnel" onclick="Maindiv()">Tunnel diodes</a></li>
+				<li><a href="#About" onclick="Maindiv()">About</a></li>
+				<li>
+					<div class="Ma" onclick="Ma()" >
+						<p class="time" ></p>
+					</div>
+				</li>
+			</ul>
+			<div class="daba" onclick="Daba()" >
+				<div class="dv1" ></div>
+				<div class="dv2" ></div>
+				<div class="dv3" ></div>
+			</div>
+		</div>
+	</nav>
+	<div class="maindiv" onclick="Maindiv()" ontouchmove="Maindiv()">
+		<div class="leftc" >
+			<p class="fornp" >Beautiful Nepal</p>
+			<p class="quote" >Fear of death makes you take wrong decision and that wrong decision kills you.</p>
+		</div>
+		<div class="middlec" onclick="Maindiv()" ontouchmove="Maindiv()">
+			<h2 id="Schottky">Schottky diodes</h2>
+				<p>Schottky diodes are constructed of a metal-to-N junction rather than a P-N 
+				semiconductor junction. Also known as hot-carrier diodes, Schottky diodes are 
+				characterized by fast switching times (low reverse-recovery time), low forward 
+				voltage drop (typically 0.25 to 0.4 volts for a metal-silicon junction), and low 
+				junction capacitance.</p>
+				<p>The schematic symbol for a Schottky diode is shown in the figure below.</p>
+				<img src="files/img/schottky-diode.webp" alt="TM">
+				<p class="figcaption">Fig. Schottky diode schematic symbol.</p>
+				<h3 class="subheading">Advantages and Disadvantages of Schottky Diodes</h3>
+					<p>The forward voltage drop ' VF ', reverse-recovery time ' trr ', and junction 
+					capacitance ' CJ ' of Schottky diodes are closer to ideal than the average “rectifying” 
+					diode. This makes them well suited for high-frequency applications. Unfortunately, 
+					though, Schottky diodes typically have lower forward current (IF) and reverse 
+					voltage (VRRM and VDC) ratings than rectifying diodes and are thus unsuitable for 
+					applications involving substantial amounts of power. Though they are used in low 
+					voltage switching regulator power supplies.</p>
+			<h2 id="Tunnel">Tunnel diodes</h2>
+				<p>Tunnel diodes exploit a strange quantum phenomenon called resonant tunneling to 
+				provide a negative resistance forward-bias characteristics. When a small forward-bias 
+				voltage is applied across a tunnel diode, it begins to conduct current. (Figure below(b)) 
+				As the voltage is increased, the current increases and reaches a peak value called the 
+				peak current (IP). If the voltage is increased a little more, the current actually begins 
+				to decrease until it reaches a low point called the valley current (IV). If the voltage 
+				is increased further yet, the current begins to increase again, this time without 
+				decreasing into another “valley.” The schematic symbol for the tunnel diode shown in figure(a) below.</p>
+				<img class="maximg" src="files/img/tunnel-diodes.webp" alt="TM" />
+				<p class="files/figcaption">Fig. Tunnel diode (a) Schematic symbol. (b) Current vs voltage plot (c) Oscillator.</p>
+				<p>The forward voltages necessary to drive a tunnel diode to its peak and valley currents are known as peak 
+				voltage (VP) and valley voltage (VV), respectively. The region on the graph where current is decreasing while 
+				applied voltage is increasing (between VP and VV on the horizontal scale) is known as the region of negative resistance.</p>
+				<p>Tunnel diodes, also known as Esaki diodes in honor of their Japanese inventor Leo Esaki, are able to 
+				transition between peak and valley current levels very quickly, “switching” between high and low states of 
+				conduction much faster than even Schottky diodes. Tunnel diode characteristics are also relatively unaffected 
+				by changes in temperature.</p>
+				<img class="maximg" src="files/img/reverse-breakdown-voltage-versus-doping-level.webp" alt="TM" />
+				<p class="figcaption">Fig. Reverse breakdown voltage versus doping level. After Sze [SGG]</p>
+				<h3 class="subheading">Characteristics of Tunnel Diodes</h3>
+					<p>Tunnel diodes are heavily doped in both the P and N regions, 1000 times the level in a rectifier. 
+					This can be seen in the figure above. Standard diodes are to the far left, zener diodes near to the 
+					left, and tunnel diodes to the right of the dashed line. The heavy doping produces an unusually thin 
+					depletion region. This produces an unusually low reverse breakdown voltage with high leakage. The 
+					thin depletion region causes high capacitance. To overcome this, the tunnel diode junction area must be tiny.</p>
+					<p>The forward diode characteristic consists of two regions: a normal forward diode characteristic 
+					with current rising exponentially beyond VF, 0.3 V for Ge, 0.7 V for Si.</p>
+					<p>Between 0 V and VF is an additional “negative resistance” characteristic peak. This is due 
+					to quantum mechanical tunneling involving the dual particle-wave nature of electrons. The 
+					depletion region is thin enough compared with the equivalent wavelength of the electron 
+					that they can tunnel through. They do not have to overcome the normal forward diode 
+					voltage VF. The energy level of the conduction band of the N-type material overlaps 
+					the level of the valence band in the P-type region. With increasing voltage, tunneling begins; 
+					the levels overlap; current increases, up to a point. As current increases further, the energy 
+					levels overlap less; current decreases with increasing voltage. This is the “negative resistance” 
+					portion of the curve.</p>
+				<h3 class="subheading">Applications of Tunnel Diodes</h3>
+					<p>Tunnel diodes are not good rectifiers, as they have relatively high “leakage” current 
+					when reverse-biased. Consequently, they find application only in special circuits where 
+					their unique tunnel effect has value. To exploit the tunnel effect, these diodes are 
+					maintained at a bias voltage somewhere between the peak and valley voltage levels, always 
+					in a forward-biased polarity (anode positive, and cathode negative).</p>
+					<p>Perhaps the most common application of a tunnel diode is in simple high-frequency 
+					oscillator circuits as in the figure(c) above, where it allows a DC voltage source to 
+					contribute power to an LC “tank” circuit, the diode conducting when the voltage across 
+					it reaches the peak (tunnel) level and effectively insulating at all other voltages. 
+					The resistors bias the tunnel diode at a few tenths of a volt centered on the negative 
+					resistance portion of the characteristic curve. The L-C resonant circuit may be a section 
+					of a waveguide for microwave operation. Oscillation to 5 GHz is possible.</p>
+				<h3 class="subheading">History of Tunnel Diodes</h3>
+					<p>At one time the tunnel diode was the only solid-state microwave amplifier available. 
+					Tunnel diodes were popular starting in the 1960’s. They were longer lived than traveling 
+					wave tube amplifiers, an important consideration in satellite transmitters. Tunnel diodes 
+					are also resistant to radiation because of the heavy doping.</p>
+					<p>Today various transistors operate at microwave frequencies. Even small signal tunnel 
+					diodes are expensive and difficult to find today. There is one remaining manufacturer 
+					of germanium tunnel diodes, and none for silicon devices. They are sometimes used in military 
+					equipment because they are insensitive to radiation and large temperature changes.</p>
+					<p>There has been some research involving the possible integration of silicon tunnel diodes 
+					into CMOS integrated circuits. They are thought to be capable of switching at 100 GHz in digital 
+					circuits. The sole manufacturer of germanium devices produces them one at a time. A batch process 
+					for silicon tunnel diodes must be developed, then integrated with conventional CMOS processes. [SZL]</p>
+					<p>The Esaki tunnel diode should not be confused with the resonant tunneling diode CH 2, of more 
+					complex construction from compound semiconductors. The RTD is a more recent development capable of 
+					higher speed.</p>
+		</div>
+		<div class="rightc" >
+			<ol class="content1">
+				<li><a href="#Schottky" >Schottky diodes</a></li>
+				<li><a href="#Tunnel" >Tunnel diodes</a></li>
+				<li><a href="#About" >About</a></li>
+			</ol>
+		</div>
+		<span>TM<!--&trade;--></span>
+	</div>
+	<div class="footer" >
+		By Tarun Regmi.<br>From Bajura, Nepal
+	</div>
+<script>
+	var contenT, dabA, dv1T, dv2T, dv3T, mA, timE, mdc;
+		contenT = document.querySelector('.content');
+			dabA = document.querySelector('.daba');
+			dv1T = document.querySelector('.dv1');
+			dv2T = document.querySelector('.dv2');
+			dv3T = document.querySelector('.dv3');
+			mA = document.querySelector('.Ma');
+			timE = document.querySelector('.time');
+			mdc = document.querySelector('.maindiv');
+	
+			function Daba(){
+				contenT.classList.toggle('contenttg');
+				dv1T.classList.toggle('dv1tg');
+				dv2T.classList.toggle('dv2tg');
+				dv3T.classList.toggle('dv3tg');
+				navigator.vibrate(20);
+			};
+			function Maindiv(){
+				contenT.classList.remove('contenttg');
+				dv1T.classList.remove('dv1tg');
+				dv2T.classList.remove('dv2tg');
+				dv3T.classList.remove('dv3tg');
+			};
+			function Ma(){
+				mA.classList.toggle('Matg');
+				timE.classList.toggle('timetg');
+				navigator.vibrate(16);
+			};
+			function Time(colors){
+				requestAnimationFrame(Time);
+				var TM = new Date();
+				timE.innerText = TM.getHours()+':'+TM.getMinutes()+':'+TM.getSeconds();
+				var tms = TM.getHours();
+				for(var i=0;i<colors.length;i++){
+					mdc.style.background = colors[tms];
+				};
+			};
+			var colors =['#94b8b8','#00e6e6','#70dbdb','#4ddbff','#80dfff','#99ddff','#ccccff','#ffe6ff','#ffe6e6','#ffe6cc','#ffdd99','#ffdb4d','#ffb84d','#ffcc33','#ffff33','#d2ff4d','#99e600','#00e600','#00ff55','#1aff1a','#1aff8c','#33ffcc','#00e6e6','#70dbdb'];
+			Time(colors);
+	var containerC, moverC;
+		containerC = document.querySelector('.container');
+		moverC = document.querySelector('.mover');
+			moverC.addEventListener('click', trig);
+				function trig(){
+					containerC.classList.toggle('containerTg');
+					moverC.classList.toggle('moverTg');
+					mdc.classList.toggle('maindivTg');
+				};
+</script>
+</body>
+</html>
