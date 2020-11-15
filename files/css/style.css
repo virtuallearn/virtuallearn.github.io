@@ -205,7 +205,7 @@ overflow:hidden;}
 			border-radius:50%;
 			outline:none;
 			box-shadow:0 10px 30px #000;
-			background:url('../img/tm.jpg');
+			background:url('tm.jpg');
 			background-position:center;
 			background-repeat:no-repeat;
 			background-size:200%;
